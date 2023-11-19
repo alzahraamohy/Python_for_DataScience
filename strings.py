@@ -15,3 +15,25 @@ y = x + "can code"    #"zahra can code"
 
 -- Tubles - by applying any operation on string 
 3 * zahra    #"zahra zahra zahra"
+
+-- backslash for escape sequences \ 
+  \n : for newline
+  \t : for tab
+  \\ : print \
+  or place r before the " in string to print any sympol directly
+
+-- use .upper() to convert to uppercase
+  b = a.upper()
+
+-- to replace a word with another use .replace(first(what in the str),second(what we want to replace))
+  b = a.replace('zahra', 'mona')
+
+-- to find a substring use .find('substring')
+  zahra.find('hra')    #2  the starting index
+
+-- 
+
+
+
+
+
