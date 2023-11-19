@@ -9,5 +9,13 @@
 -- we can perform operations on A
   y = 2 * 5
   y : A / 2
--- 
+-- # Check the Python Version
+
+import sys
+print(sys.version)
+# Print string and error to see the running order
+
+print("This will be printed")
+frint("This will cause an error")
+print("This will NOT be printed")
 
