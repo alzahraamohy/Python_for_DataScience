@@ -6,9 +6,10 @@ print("Hello world")
 #we have different datatypes
 int x
 float y
+bool #true and false are uppercase
 #to know what the type of anything
 type(5)
 #to casting from int to float
-float(2):2.0
-int('1'):1
+float(2)
+int('1')
 int('A') #result error
