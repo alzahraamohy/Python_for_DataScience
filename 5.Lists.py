@@ -24,6 +24,23 @@
     A[0] = 'hard rock'
     print('After change:', A)    #After change: ['hard rock', 10, 1.2]
 
+-- We can break a string to a list using "split"
+    'hard rock'.split()    #['hard', 'rock']
+    'A,B,C,D'.split(',')   #['A', 'B', 'C', 'D']
+
+-- You can clone list **A** by using  the following syntax:
+    A = ["hard rock", 10, 1.2]
+    B = A
+    B = A[:]
+    B            #['banana', 10, 1.2]
+
+
+
+
+
+
+
+
 -- We can also delete an element of a list using the del
     del(A[0])
     print('After change:', A)    #After change: [10, 1.2]
