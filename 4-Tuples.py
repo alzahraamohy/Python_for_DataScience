@@ -56,14 +56,3 @@
     #  Print the second element in the second nested tuples
 
     NestedT[2][1][1]    #'o'
-
--- we can access a range
-  x[0:2] #'zahra' , 3.88 , 1 
-
--- we can combine tubles by ' + '
-
--- we can use len to indicate the length of the tuple
-
--- if we want to sort a tuple we can use sorted function
-  new = sorted(x)
--- 
