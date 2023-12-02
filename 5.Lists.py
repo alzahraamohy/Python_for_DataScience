@@ -34,13 +34,6 @@
     B = A[:]
     B            #['banana', 10, 1.2]
 
-
-
-
-
-
-
-
 -- We can also delete an element of a list using the del
     del(A[0])
     print('After change:', A)    #After change: [10, 1.2]
