@@ -45,9 +45,14 @@
   5) Find the union of two sets
       album_set1.union(album_set2)          #{'AC/DC', 'Back in Black', 'The Dark Side of the Moon', 'Thriller'}
 
-  6) 
+  6) Check if superset
+      set(album_set1).issuperset(album_set2)      #False
 
-
+  7) Check if subset
+      set(album_set2).issubset(album_set1)        #False
+      set({"Back in Black", "AC/DC"}).issubset(album_set1)    #True
+      album_set1.issuperset({"Back in Black", "AC/DC"})      #True
+      
 
 
         
