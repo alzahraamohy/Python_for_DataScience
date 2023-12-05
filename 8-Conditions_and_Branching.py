@@ -38,7 +38,7 @@
     It is helpful to think of an **if statement** as a locked room, if the statement is **True** we can enter the room 
     and your program will run some predefined tasks, but if the statement is **False** the program will ignore the task.
 
-    # If statement example
+    1) # If statement example
       age = 19
     #expression that can be true or false
       if age > 18:
@@ -50,7 +50,73 @@
                   you can enter
                   move on
 
--- 
+
+    2) # Else statement example
+       age = 18
+       if age > 18:
+            print("you can enter" )
+       else:
+            print("go see Meat Loaf" )
+    
+       print("move on")
+
+    #Then the output is 
+                  go see Meat Loaf
+                  move on
+
+
+    3) # Elif statment example
+       age = 18
+       if age > 18:
+           print("you can enter" )
+       elif age == 18:
+           print("go see Pink Floyd")
+       else:
+           print("go see Meat Loaf" )
+    
+       print("move on")
+
+    #Then the output is 
+                  go see Pink Floyd
+                  move on
+
+-- Logical Operatpors:
+    **and**  **or**  **not**
+    The and statement is only True when both conditions are true. 
+    The or statement is True if one condition, or both are True. 
+    The not statement outputs the opposite truth value.
+
+    1) #Example on and
+    album_year = 1980
+    if(album_year > 1979) and (album_year < 1990):
+           print ("Album year was in between 1980 and 1989")
+    print("")
+    print("Do Stuff..")
+
+    #Output
+    Album year was in between 1980 and 1989
+
+    Do Stuff..
+
+    2) #Example on or
+    album_year = 1990
+    if(album_year < 1980) or (album_year > 1989):
+           print ("Album was not made in the 1980's")
+    else:
+           print("The Album was made in the 1980's ")
+
+    #Output
+    Album was not made in the 1980's
+
+
+    3) #Example on not
+    album_year = 1983
+    if not (album_year == 1984):
+        print ("Album year is not 1984")
+
+    #Solution
+        Album year is not 1984
+
 
 
 
