@@ -1,6 +1,6 @@
 -- Comparison operations compare some value or operand and based on a condition, produce a Boolean. When comparing two values you can use these operators:
 
-    equal: ==
+    equal: (==)
     not equal: !=
     greater than: >
     less than: <
