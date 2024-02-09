@@ -7,6 +7,8 @@ print("Hello world")
 int x
 float y
 bool #return true or false  
+    -it used in Comparison Operators ( < , > , <= , >=)
+    - or used in Logical Use	( and , or , not )
 
 #to know what the type of anything
 type(5)
