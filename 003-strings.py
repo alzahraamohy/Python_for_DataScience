@@ -9,6 +9,12 @@
 -- to know the length of the string use len
   len("zahra")   #5 , it also count spaces
 
+-- strings are immutable
+     >>> greeting = "Hello there"
+     >>> greeting = "Mello there"
+     That second line in Python actually creates a new place in memory where the string greeting is stored,
+     effectively creating a new string, a new object, even though it has the same name.
+
 -- we can combine the strings 
   x = "zahra"
   y = x + "can code"    #"zahra can code"
