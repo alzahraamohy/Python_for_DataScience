@@ -4,13 +4,13 @@
 -- To Create a set
     set1 = {"pop", "rock", "soul", "hard rock", "rock", "R&B", "rock", "disco"}
 
--- We can Convert list to set
+-- We can Convert the list to set
     album_list = [ "Michael Jackson", "Thriller", 1982, "00:42:19", \
                    "Pop, Rock, R&B", 46.0, 65, "30-Nov-82", None, 10.0]
     album_set = set(album_list)             
     album_set    #{'00:42:19', 10.0, 1982,'30-Nov-82', 46.0,65,'Michael Jackson',None,'Pop, Rock, R&B', 'Thriller'}
 
--- We can do many operationson sets 
+-- We can do many operations on sets 
   # Sample set
   A = set(["Thriller", "Back in Black", "AC/DC"])
     1) Adding 
@@ -23,6 +23,8 @@
 
     3) Verify if the element is in the set
         "AC/DC" in A    #True
+
+    4).pop()  remove a random element
 
 -- Sets logic operations
     # Sample Sets
@@ -39,7 +41,7 @@
   3) Find the difference in set1 but not set2
       album_set1.difference(album_set2)      #{'Thriller'}
 
-  4) Find intersection of album_list1 and album_list2
+  4) Find the intersection of album_list1 and album_list2
       album_set1.intersection(album_set2)      #{'AC/DC', 'Back in Black'}
 
   5) Find the union of two sets
