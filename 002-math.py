@@ -1,6 +1,13 @@
 --if we have 45 + 5 + 2 + 1 , then we call the numbers "operands" and the addictive symbol "operator"
 --python can do different math operations ( + , - , * , /) and so on.. , "//" is for integer division ex: 25//6 = 4 but 25/6 = 4.166
---python follows the mathematical conventions (precendence), like multiplying before adding and so on..
+-- Use ** for exponential >>> 3 ** 2 = 9
+-- use ^ for bitwise xor
+--python follows the mathematical conventions (precedence), like multiplying before adding and so on..
+      The precedence as follow:
+            1. Parentheses
+            2. Exponentiation
+            3. Multiplication and Division
+            4. Addition and Subtraction
   
 --when we assign a value to a variable A we use "=" operator and we can change it anytime and apply operations
   A = 5
