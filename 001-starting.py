@@ -6,7 +6,8 @@ print("Hello world")
 #we have different datatypes
 int x
 float y
-bool #true and false are uppercase
+bool #return true or false  
+
 #to know what the type of anything
 type(5)
 #to casting from int to float
