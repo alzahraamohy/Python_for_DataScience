@@ -1,4 +1,4 @@
--- Tubles are containers of ( strings , floats, intgers )
+-- Tubles are containers of related ( strings , floats, intgers ), immutable (can't add or remove items), and ordered
 
 -- we can contain the all types in one tuble
     x = ('zahra' , 3.88 , 1 )
@@ -15,7 +15,7 @@
     print(tuple1[1])  #10
     print(tuple1[2])  #1.2
 
--- We can know the type of eah element by 
+-- We can know the type of each element by 
     # Print the type of value on each index
     print(type(tuple1[0]))      #<class 'str'>
     print(type(tuple1[1]))      #<class 'int'>
