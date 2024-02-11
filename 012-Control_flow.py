@@ -5,7 +5,7 @@ if phone_balance < 5:
     phone_balance += 10
     bank_balance -= 10
 
----------
+---------------------------
 if season == 'spring':
     print('plant the garden!')
 elif season == 'summer':        #elif used to represent another condition
@@ -16,7 +16,7 @@ elif season == 'winter':
     print('stay indoors!')
 else:                            #else , in the case of no condition is true
     print('unrecognized season')
-----------
+----------------------
 
 -- Note that if you want to execute more than one line inside the if statement, use blocks { } from start to end.
 
@@ -95,7 +95,63 @@ while sum(hand) < 17:
 -- while loops are ideal when the iterations need to continue until a condition is met.
 
 ----------------------------
+**Break, Continue**  
+-- break terminates a loop
+-- continue skips one iteration of a loop
+Used in for, while loops when we don't want a specific operation to happen inside the loop.
+
+----------------------------
+**Zip and Enumerate**
+-- zip returns an iterator that combines multiple iterables into one sequence of tuples.
+   Each tuple contains the elements in that position from all the iterables. For example, printing
+
+list(zip(['a', 'b', 'c'], [1, 2, 3])) 
+  >>> would output [('a', 1), ('b', 2), ('c', 3)]
+
+-- In addition to zipping two lists together, you can also unzip a list into tuples using an asterisk.
+
+some_list = [('a', 1), ('b', 2), ('c', 3)]
+letters, nums = zip(*some_list)
+
+-- enumerate is a built in function that returns an iterator of tuples containing indices and values of a list. 
+letters = ['a', 'b', 'c', 'd', 'e']
+for i, letter in enumerate(letters):
+    print(i, letter)
+This code would output:
+
+0 a
+1 b
+2 c
+3 d
+4 e
+
+-------------------------
+**List Comprehensions**
+ you can create lists really quickly and concisely with list comprehensions. This example from earlier:
+
+capitalized_cities = []
+for city in cities:
+    capitalized_cities.append(city.title())
   
+can be reduced to:
+capitalized_cities = [city.title() for city in cities]
+  
+>>> you can also include condition
+squares = [x**2 for x in range(9) if x % 2 == 0]
+
+-----------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
