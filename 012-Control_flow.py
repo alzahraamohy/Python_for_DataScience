@@ -76,7 +76,30 @@ print(usernames)
 ['joey_tribbiani', 'monica_geller', 'chandler_bing', 'phoebe_buffay']
 ---------------
 **While Loops**
+  syntax:
+  while condition:
+    operation
+
+--Ex1
+card_deck = [4, 11, 8, 5, 13, 2, 8, 10]
+hand = []
+
+## adds the last element of the card_deck list to the hand list
+## until the values in hand add up to 17 or more
+while sum(hand) < 17:
+    hand.append(card_deck.pop())
+
+
+**For Loops Vs. While Loops**
+-- for loops are ideal when the number of iterations is known or finite.
+-- while loops are ideal when the iterations need to continue until a condition is met.
+
+----------------------------
   
+
+
+
+
 
 
 
