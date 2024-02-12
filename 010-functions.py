@@ -81,7 +81,19 @@ def population_density(population, land_area):
   multiply(4, 7)
 
 
-  
+-- A get method is for obtaining an attribute value. A set method is for changing an attribute value.
+    If you were writing a Shirt class, the code could look like this:
+
+class Shirt:
+
+    def __init__(self, shirt_color, shirt_size, shirt_style, shirt_price):
+        self._price = shirt_price
+
+    def get_price(self):
+      return self._price
+
+    def set_price(self, new_price):
+      self._price = new_price
   
 
       
