@@ -16,3 +16,7 @@ type(5)
 float(2)
 int('1')
 int('A') #result error
+
+
+
+
