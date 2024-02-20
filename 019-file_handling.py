@@ -1,9 +1,10 @@
 -- To open an exiting file we use this structure.
 file = open ("file path\ file name","mode")
-the mode can be : w >>> write, to write or create file and it removes the past data
-                  r >>> read
-                  a >>> appeand, do not remove the past data
-
+the mode can be : 1) r : Opens the file for reading only, Raises a "FileNotFoundError" if the file does not exist.
+                  2) w : Opens the file for writing only, If the file exists, it erases its contents.
+                          If the file does not exist, it creates a new file.
+                  3) a : Opens the file for appending only, doesn't erase its contents.
+                    
 # Read the Example1.txt
 example1 = "example1.txt"
 file1 = open(example1, "r")
@@ -37,4 +38,38 @@ with open(example1, "r") as file1:
 
 with open(example1, "r") as file1:
     print(file1.read(4))
+
+# Write line to file
+exmp2 = '/Example2.txt'
+with open(exmp2, 'w') as writefile:
+    writefile.write("This is line A")
+
+#write and read
+with open('/Example2.txt', 'w') as writefile:
+    writefile.write("Overwrite\n")
+with open('/Example2.txt', 'r') as testwritefile:
+    print(testwritefile.read())
+
+
+Let's copy the file **Example2.txt** to the file **Example3.txt**:
+# Copy file to another
+
+with open('/Example2.txt','r') as readfile:
+    with open('Example3.txt','w') as writefile:
+          for line in readfile:
+                writefile.write(line)
+
+
+or
+#Another example to copy file
+sh.copyfile( 'D:\\1\\1.txt', 'D:\\1\\00\\0.txt')
+#copy directory
+sh.copytree('D:\\1\\00' , 'D:\\1\\33')
+#move file or directory
+sh.move('D:\\1\\1.txt' , 'D:\\1\\33\\55.txt') 
+
+
+
+
+
 
