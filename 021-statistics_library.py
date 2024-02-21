@@ -40,7 +40,8 @@ print(a)
 a = st.stdev([3.2,6.9,8.1,-9.3,66])
 print(a)
 
-8)st.variance()        >>> بيقيس مقدار الاختلاف
+8)st.variance()        >>> Measures the amount of variation
+#بيقيس مقدار الاختلاف
 #ex
 a = st.variance([3.2,6.9,8.1,-9.3,66])
 print(a)
