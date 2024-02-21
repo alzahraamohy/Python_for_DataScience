@@ -43,6 +43,11 @@ a =rn.sample(range(200) ,10)
 print(a)
 #ex output >>> [21, 72, 51, 94, 14, 145, 99, 111, 71, 7]
 
-8)  rn.shuffle()
+8)  rn.shuffle()        >>> Randomizes the list
+#ex
+items = [1,2,3,4,5,6]
+rn.shuffle(items)
+print (items)
+#output    >>>   [1, 4, 6, 2, 3, 5]
 
 
