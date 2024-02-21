@@ -20,18 +20,29 @@ print(a)
 a = rn.randrange(150)
 print(a)
 
-5)  rn.randrange()  >>> another use, that it gives random integer from this range but from the steps indicated
+5)  rn.randrange()  >>> Another use, that it gives a random integer from this range but from the steps indicated
 #ex
 a =rn.randrange(0,20,2)
 print(a)
 #output ex >> 2,4,6,8,10
 
-6)  rn.choice()      >>> select random element from this list or set 
+6)  rn.choice()      >>> select a random element from this list or set 
 #ex
-a =rn.choice(['a','b','c'])    #can be string also
+a =rn.choice(['a','b','c'])    
 print(a)
 #ex output >>> a
 
+#can be string also, will generate a random charachter
+a =rn.choice('sweet home alabama')
+print(a)
+#output ex >>> w
 
+7)  rn.sample()      >>> generates many numbers as you want, not only one
+#ex
+a =rn.sample(range(200) ,10)
+print(a)
+#ex output >>> [21, 72, 51, 94, 14, 145, 99, 111, 71, 7]
+
+8)  rn.shuffle()
 
 
