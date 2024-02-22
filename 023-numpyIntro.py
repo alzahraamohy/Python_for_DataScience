@@ -90,4 +90,50 @@ print(b)
 -- and to specify 2d array use "a" as
 a = [[1,2,3],[5,3,6],[9,6,5]]
 
-2) 
+-- or use range to make a matrix
+a = array([range(i, i + 3) for i in [2, 4, 6]])
+#output 
+[[2 3 4]
+ [4 5 6]
+ [6 7 8]]
+
+2) Variables can be defined after writing them
+from  numpy import *
+a = array([('x',3,4.2),('y',4,5.3),('z',5,6.3)],
+           dtype =[('name','U5'),('number','i2'),      #U5, is a string from 5 characters
+                   ('value','f4')])
+print(a)
+
+3)   To make an empty matrix  
+a = empty((3,2))
+print(a)
+
+4)   
+a = random.uniform(1,10)   #Gives random number from 1 to 10
+b = random.uniform(1,10,20)   #Gives random 20 numbers from 1 to 10
+-- Note that "random" is a function in Numpy library
+
+5)   matrix of random numbers between 0 and 1, of size 2x3
+a =random.random((2,3))
+
+6)   random.normal  # Generate an array of 10 random numbers sampled from a normal distribution
+from  numpy import *
+a =random.normal(0,1,10)
+print(a)
+
+7)    random.randint   
+-- a =  random.randint(150)   #generates random integer from 1 to 150
+-- a =random.randint(5, size=7)   #generates 7 random integers in range from 1 to 5
+-- a =random.randint(5,20, size=7)   ##generates 7 random integers in range from 5 to 20
+-- a = random.randint(0, 10, (3, 3))   #generates a 2d matrix from random integers from 0 to 10
+-- a = random.randint(5,10, size=(3, 4, 5))   ##generates a 3d matrix from random integers from 5 to 10
+
+8)   reshape
+a = random.randint(1,60,25)
+b = reshape(a,(5,5))   #reshape the list to a 5x5 matrix
+
+
+
+
+
+
