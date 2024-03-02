@@ -135,7 +135,7 @@ print(b)
 [0 1 2 3 4]
 [ 0. 10. 20. 30. 40.]
 
-12) to make a matrix is powered by number 
+12) to make a matrix powered by a number 
 from  numpy import *
 a =arange(5)
 b =empty(5)
@@ -144,7 +144,76 @@ power(a, 4, out=b)
 print(a)
 print(b)
 
-13) 
+13)  add.reduce is to sum all the matrix numbers
+>>> from  numpy import *
+a =arange(15)
+b = add.reduce(a)
+print(a)
+print(b)
+>>> output > 105
+
+
+14) multiply.reduce make the same concept as add.reduce for multiplication
+
+15) multiply.outer, multiples the outer number of the matrix
+>>> from  numpy import *
+a =arange(2,8)
+b = multiply.outer(a,a)
+print(a)
+print(b)
+>>> [2 3 4 5 6 7]
+[[ 4  6  8 10 12 14]
+ [ 6  9 12 15 18 21]
+ [ 8 12 16 20 24 28]
+ [10 15 20 25 30 35]
+ [12 18 24 30 36 42]
+ [14 21 28 35 42 49]]
+
+
+16)   Add all the previous numbers
+from  numpy import *
+a =arange(10)
+b = add.accumulate(a)
+print(a)
+print(b)
+
+17) multiply.accumulate is the same concept
+
+18) len in sets, returns the number of elements but returns the number of rows in the matrix
+from  numpy import *
+a =arange(12)
+b = len(a)        #12
+c = a.reshape(3,4)
+d = len(c)    #3
+
+-- to solve this confusion >>use *size* to always return number of elements in all dimensions
+
+
+19)   shape returns the  dimensions
+from  numpy import *
+a =arange(12)
+b = a.shape    #(12,)
+c = a.reshape(3,4)
+d = c.shape        #(3,4)
+
+20) ndim returns how many dimensions
+from  numpy import *
+a =arange(12)
+b = a.ndim    #1
+c = a.reshape(3,4)
+d = c.ndim    #2
+
+21) dtype returns the type of data 
+from  numpy import *
+ 
+a =array(['a','d','g','h','j'])
+b = a.dtype    #<U1
+
+c = arange(12)
+d = c.reshape(3,4)
+e = d.dtype    #int32
+
+
 
 
 
