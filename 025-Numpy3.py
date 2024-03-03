@@ -74,8 +74,55 @@ print(a)
 a[:,:] = 0 
 print(a)
 
-8) 
+8) **vstack** concatenate matrixes Vertically, number of columns must be the same
+>>> from  numpy import *
+a =arange(4).reshape(2,2) #[[0 1]
+                          #[2 3]]
+b =2*arange(4).reshape(2,2) #[[0 2]
+                            #[4 6]]
+c = vstack((a,b))      #[[0 1]
+                       #[2 3]
+                       #[0 2]
+                       #[4 6]]
 
+9) **hstack** concatenate horizontally, number of rows must be the same
+>>> from  numpy import *
+a =arange(4).reshape(2,2)
+b =2*arange(4).reshape(2,2)
+c = hstack((a,b))  #[[0 1 0 2]
+                   #[2 3 4 6]]
+
+10) another method equals **vstack**
+
+>>> from numpy import *
+a =random.randint(5,20, size=9).reshape(3,3)
+b =random.randint(5,20, size=9).reshape(3,3)
+c = concatenate([a,b] , axis = 0)
+
+11) another method equals **hstack**
+
+>>> from numpy import *
+a =random.randint(5,20, size=9).reshape(3,3)
+b =random.randint(5,20, size=9).reshape(3,3)
+c = concatenate([a,b] , axis = 1)
+
+12) min, max element and their location by index
+>>> import numpy as np
+a =np.random.randint(5,20, size=9).reshape(3,3)
+#[[15  9  8]
+#[ 6 16 12]
+#[ 9 10 18]]
+
+b = np.max(a)  #18
+c = np.min(a)  #6
+d = np.argmax(a) #8
+e = np.argmin(a) #3
+
+13) variance and covariance
+>>> from numpy import *
+a =random.randint(5,20, size=9).reshape(3,3)
+b = var(a)
+c = cov(a)
 
 
 
