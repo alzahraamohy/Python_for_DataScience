@@ -124,7 +124,17 @@ a =random.randint(5,20, size=9).reshape(3,3)
 b = var(a)
 c = cov(a)
 
-
+14) to find the summation
+-- axis = 1 for rows, axis = 0 for columns
+>>> from numpy import *
+a =random.randint(5,20, size=9).reshape(3,3)
+#[[13  7  7]
+ #[ 9 17  8]
+ #[14 12 13]]
+b = sum(a)   #100
+c = a.sum()  #100
+d = a.sum(axis = 1) #[27 34 39]
+e = a.sum(axis = 0) #[36 36 28]
 
 
 
