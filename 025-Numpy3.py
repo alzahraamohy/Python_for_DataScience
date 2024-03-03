@@ -136,6 +136,28 @@ c = a.sum()  #100
 d = a.sum(axis = 1) #[27 34 39]
 e = a.sum(axis = 0) #[36 36 28]
 
+15) for sorting
+>>> from numpy import *
+a =random.randint(5,20, size=9).reshape(3,3)
+ #[[19 14 16]
+  #[ 7  9 10]
+  #[18 14 11]]
+b = sort(a,axis=0)
+ #[[ 7  9 10]
+  #[18 14 11]
+  #[19 14 16]]
+c = sort(a,axis=1)
+#[[14 16 19]
+ #[ 7  9 10]
+ #[11 14 18]]
+
+ 16) Inverse matrix
+>>> from numpy import *
+a =random.randint(1,4, size=9).reshape(3,3)
+b =linalg.inv(a)
+
+ 
+ 
 
 
 
