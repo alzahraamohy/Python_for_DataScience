@@ -1,0 +1,95 @@
+What is Translation in Programming?
+In programming, "translation" refers to the process of converting code written in a high-level programming language (like Python, Java, or C++) into machine code, which is the language that a computer's processor can understand and execute.
+Machine code is made up of binary instructions specific to a computer's CPU architecture.
+
+Interpreters vs compilers 
+Interpreters and compilers are both tools that translate high-level programming languages
+into machine code, but they do so in different ways and have distinct characteristics. 
+Here's a comparison of the two:
+
+Interpreter:
+> Executes and translates the program line by line.
+> Typically slower execution compared to compiled code because it translates code at runtime.
+> Errors are reported immediately when the interpreter encounters them, allowing for easier debugging of specific lines.
+Languages: Python, Ruby, JavaScript, PHP.
+
+Compiler:
+> Translates the entire program at once before execution and creates an executable file.
+This executable file can then be run directly by the computer without needing the source code or the compiler.
+> Compiled code typically runs faster than interpreted code because it is translated before execution.
+> Languages: C, C++, Java (compiles to bytecode), Rust, Go.
+
+--------------------------------------------
+What are Identifiers?
+Identifiers are names used to identify variables, functions, classes, modules, and other objects in Python code.
+They are essentially the names you give to various program elements.
+>> Start with a Letter or Underscore: An identifier must begin with a letter (a-z, A-Z) or an underscore (_). It cannot start with a digit.
+>> Followed by Letters, Digits, or Underscores: After the first character, an identifier can contain letters, digits (0-9), and underscores.
+>> Case Sensitive: Identifiers are case-sensitive. For example, Variable and variable are considered different identifiers.
+>> No Reserved Words(They are part of the language syntax and cannot be used as identifiers. ).
+>> Unlimited Length.
+
+List: Ordered,Mutable,Allows Duplicates collection of items, which can be of different types.
+colors = ["red", "green", "blue"]
+
+Tuple: Ordered, immutable collection of items.
+Once created, tuples cannot be changed. You cannot add, remove, or modify elements.
+Allows Duplicates: Tuples can contain duplicate elements.
+coordinates = (10, 20)
+
+Dictionary: Unordered, Mutable, no Duplicates Collection of key-value pairs.
+my_dict = {'key1': 'value1', 'key2': 'value2'}
+
+Set: Unordered,Mutable,no Duplicates collection of unique items.
+unique_numbers = {1, 2, 3, 4}
+
+--------------------------------------
+Multi-Line Statements
+Python allows you to write multi-line statements using backslashes (\) or enclosing the expressions in parentheses (), brackets [], or braces {}.
+total = 100 + 200 + 300 + \
+        400 + 500
+Indentation is used to define the blocks of code associated with control structures, such as loops, conditionals, and functions.
+Proper indentation is crucial because it determines how statements are grouped together.
+
+Double Quotes (")
+Double quotes can be used interchangeably with single quotes. They are particularly useful when the string contains single quotes, allowing you to avoid escaping them.
+double_quoted_string = "It's a beautiful day!"
+
+Raw Strings
+Raw strings are defined by prefixing the string with r or R. They treat backslashes as literal characters and are useful for regular expressions or file paths.
+raw_string = r"C:\Users\Alice\Documents\file.txt"
+
+----------------------------------
+Python numbers
+Integers: Whole numbers, unbounded in size.
+Floating-Point Numbers: Decimal numbers with limited precision.
+Complex Numbers: Numbers with real and imaginary parts.
+
+---> Special Numeric Types
+Infinity: Represented by float('inf') or -float('inf')
+Not-a-Number (NaN): Represented by float('nan')
+
+conversion
+x = 10
+y = float(x)          # Converts integer to float
+
+a = 3.14
+b = int(a)            # Converts float to integer (truncates decimal part)
+
+c = 2 + 3j
+real_part = c.real    # 2.0
+imaginary_part = c.imag  # 3.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
